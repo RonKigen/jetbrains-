@@ -1,15 +1,41 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>org.jetbrains.plugins.template</id>
-    <name>IntelliJ Platform Plugin Template</name>
-    <vendor>JetBrains</vendor>
-
+    <id>com.example.ai-completion</id>
+    <name>AI Code Completion</name>
+    <vendor email="your-email@example.com" url="https://example.com">Your Company</vendor>
+    
+    <description><![CDATA[
+    AI-powered code completion using Gemini API. Get intelligent code suggestions as you type.
+    ]]></description>
+    
+    <version>1.0.0</version>
+    
+    <!-- IntelliJ Platform compatibility -->
+    <idea-version since-build="242.0" until-build="242.*"/>
+    
+    <!-- Plugin dependencies -->
     <depends>com.intellij.modules.platform</depends>
-
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.java</depends>
+    
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="org.jetbrains.plugins.template.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="org.jetbrains.plugins.template.startup.MyProjectActivity" />
+        <!-- Register completion contributor for multiple languages -->
+        <completion.contributor 
+            language="JAVA" 
+            implementationClass="org.jetbrains.plugins.template.completion.AICompletionContributor"/>
+        <completion.contributor 
+            language="kotlin" 
+            implementationClass="org.jetbrains.plugins.template.completion.AICompletionContributor"/>
+        <completion.contributor 
+            language="JavaScript" 
+            implementationClass="org.jetbrains.plugins.template.completion.AICompletionContributor"/>
+        <completion.contributor 
+            language="TypeScript" 
+            implementationClass="org.jetbrains.plugins.template.completion.AICompletionContributor"/>
+        <completion.contributor 
+            language="Python" 
+            implementationClass="org.jetbrains.plugins.template.completion.AICompletionContributor"/>
+        <completion.contributor 
+            language="TEXT" 
+            implementationClass="org.jetbrains.plugins.template.completion.AICompletionContributor"/>
     </extensions>
 </idea-plugin>
