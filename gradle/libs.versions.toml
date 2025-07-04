@@ -8,7 +8,7 @@ kotlinx-serialization = "1.9.10"
 intelliJPlatform = "1.17.0"
 changelog = "2.2.0"
 qodana = "0.1.13"
-kover = "0.7.6"
+kover = "0.9.1"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
