@@ -3,7 +3,7 @@ junit = "4.13.2"
 opentest4j = "1.3.0"
 
 # Use consistent versions for plugins
-kotlin = "1.9.10"
+kotlin = "2.2.0"
 kotlinx-serialization = "1.9.10"
 intelliJPlatform = "1.17.0"
 changelog = "2.2.0"
