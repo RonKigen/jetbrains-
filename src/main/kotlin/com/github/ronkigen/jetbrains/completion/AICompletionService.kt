@@ -1,4 +1,4 @@
-package org.jetbrains.plugins.template.completion
+package com.github.ronkigen.jetbrains.completion
 
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.diagnostic.Logger

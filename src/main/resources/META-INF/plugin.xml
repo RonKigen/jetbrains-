@@ -21,21 +21,21 @@
         <!-- Register completion contributor for multiple languages -->
         <completion.contributor 
             language="JAVA" 
-            implementationClass="org.jetbrains.plugins.template.completion.AICompletionContributor"/>
+            implementationClass="com.github.ronkigen.jetbrains.completion.AICompletionContributor"/>
         <completion.contributor 
             language="kotlin" 
-            implementationClass="org.jetbrains.plugins.template.completion.AICompletionContributor"/>
+            implementationClass="com.github.ronkigen.jetbrains.completion.AICompletionContributor"/>
         <completion.contributor 
             language="JavaScript" 
-            implementationClass="org.jetbrains.plugins.template.completion.AICompletionContributor"/>
+            implementationClass="com.github.ronkigen.jetbrains.completion.AICompletionContributor"/>
         <completion.contributor 
             language="TypeScript" 
-            implementationClass="org.jetbrains.plugins.template.completion.AICompletionContributor"/>
+            implementationClass="com.github.ronkigen.jetbrains.completion.AICompletionContributor"/>
         <completion.contributor 
             language="Python" 
-            implementationClass="org.jetbrains.plugins.template.completion.AICompletionContributor"/>
+            implementationClass="com.github.ronkigen.jetbrains.completion.AICompletionContributor"/>
         <completion.contributor 
             language="TEXT" 
-            implementationClass="org.jetbrains.plugins.template.completion.AICompletionContributor"/>
+            implementationClass="com.github.ronkigen.jetbrains.completion.AICompletionContributor"/>
     </extensions>
 </idea-plugin>

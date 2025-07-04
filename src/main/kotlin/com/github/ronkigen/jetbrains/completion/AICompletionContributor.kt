@@ -1,4 +1,4 @@
-package org.jetbrains.plugins.template.completion
+package com.github.ronkigen.jetbrains.completion
 
 import com.intellij.codeInsight.completion.*
 import com.intellij.codeInsight.lookup.LookupElementBuilder
